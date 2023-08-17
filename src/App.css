@@ -1,0 +1,22 @@
+.App {
+  margin: 20px auto;
+  max-width: 700px;
+  background: #a7bfe8;
+  background: -webkit-linear-gradient(to right, #a7bfe8, #fff);
+  background: linear-gradient(to right, #a7bfe8, #fff);
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.App footer {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 10px;
+}
+.App footer a {
+  color: black;
+}
