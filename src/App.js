@@ -1,4 +1,5 @@
 import "./App.css";
+import "./background.jpg";
 import Forecast from "./Forecast";
 import Weather from "./Weather";
 export default function App() {
