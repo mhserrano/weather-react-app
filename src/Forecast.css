@@ -11,9 +11,7 @@
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .forecast div {
   margin: 10px;
-}
-.forecast canvas {
-  max-width: 50px;
 }
