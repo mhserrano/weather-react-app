@@ -8,7 +8,7 @@
   margin: 0;
 }
 .weather-description h1 {
-  margin-top: 15px;
+  margin-top: 25px;
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
@@ -24,13 +24,13 @@
   margin-right: 5px;
 }
 .weather-description span {
-  font-size: 36px;
-  margin: 4px;
+  font-size: 38px;
+  margin-right: 5px;
   vertical-align: top;
 }
 
 .weather-description button {
-  vertical-align: top;
+  vertical-align: middle;
   background-color: rgb(0, 0, 0, 0.2);
   color: #ffffff;
   font-size: 14px;
@@ -40,10 +40,18 @@
   box-shadow: rgb(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.weather-description button:hover {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transform: scale(0.9);
+.weather-description .selected {
+  vertical-align: middle;
+  background-color: rgb(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-size: 14px;
+  margin: 1px;
+  border: 2px solid rgb(0, 0, 0, 0.4);
+  border-radius: 5px;
+  box-shadow: rgb(0, 0, 0, 0.24) 0px 3px 8px;
+  transform: scale(1.2);
 }
+
 .weather-description ul {
   text-align: start;
   padding: 0;
@@ -51,7 +59,7 @@
   margin: 10px 0;
 }
 .weather-description li {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .city-search,

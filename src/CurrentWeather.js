@@ -1,16 +1,15 @@
 import React from "react";
 import WeatherIcons from "./WeatherIcons";
+import Temperature from "./Temperature";
 
 export default function CurrentWeather(props) {
   return (
-    <div className="row">
-      <div className="col-6 m-auto p-0">
+    <div className="row mt-4">
+      <div className="col-7 m-auto p-0">
         <WeatherIcons iconCode={props.data.icon} />
-        <span>{props.data.temperature}°</span>
-        <button>C</button>
-        <button>F</button>
+        <Temperature celsius={props.data.temperature} />
       </div>
-      <div className="col-6">
+      <div className="col-5 p-0">
         <ul>
           <li className="text-capitalize">{props.data.description}</li>
           <li>Humidity: {props.data.humidity}%</li>
