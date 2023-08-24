@@ -3,26 +3,13 @@ import "./Forecast.css";
 export default function Forecast() {
   return (
     <div className="row forecast">
-      <div className="col-sm-3 col-6">
-        <p>Wednesday</p>
+      <div className="col">
+        <div>Wed</div>
         <img src="/" alt="logo" />
-        <p>14° | 22°</p>
-      </div>
-      <div className="col-sm-3 col-6">
-        <p>Thursday</p>
-        <img src="/" alt="logo" />
-        <p>14° | 22°</p>
-      </div>
-      <div className="col-sm-3 col-6">
-        <p>Friday</p>
-        <img src="/" alt="logo" />
-        <p>14° | 22°</p>
-      </div>
-      <div className="col-sm-3 col-6">
-        <p>Saturday</p>
-        <img src="/" alt="logo" />
-        <p>14° | 22°</p>
-      </div>
+        <div className="temperatures">
+          <span>14°</span> | <span>22°</span>
+        </div>
+      </div>{" "}
     </div>
   );
 }

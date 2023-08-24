@@ -4,6 +4,7 @@ import axios from "axios";
 import "./Weather.css";
 import FormattedDate from "./FormattedDate";
 import CurrentWeather from "./CurrentWeather";
+import Forecast from "./Forecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -36,28 +37,31 @@ export default function Weather(props) {
   }
   if (weatherData.ready) {
     return (
-      <div className="weather-description">
-        <form className="search-form" onSubmit={handleSubmit}>
-          <input
-            className="city-search"
-            type="text"
-            placeholder="Search for your city"
-            autoComplete="off"
-            autoFocus="on"
-            onChange={handleCityChange}
-          />
-          <input className="submit-button" type="submit" value="Submit" />
-          <input
-            className="current-location"
-            type="button"
-            value="📍 Your Location"
-          />
-        </form>
-        <div className="location">
-          <h1>{weatherData.city}</h1>
-          <FormattedDate date={weatherData.date} />
+      <div>
+        <div className="weather-description">
+          <form className="search-form" onSubmit={handleSubmit}>
+            <input
+              className="city-search"
+              type="text"
+              placeholder="Search for your city"
+              autoComplete="off"
+              autoFocus="on"
+              onChange={handleCityChange}
+            />
+            <input className="submit-button" type="submit" value="Submit" />
+            <input
+              className="current-location"
+              type="button"
+              value="📍 Your Location"
+            />
+          </form>
+          <div className="location">
+            <h1>{weatherData.city}</h1>
+            <FormattedDate date={weatherData.date} />
+          </div>
+          <CurrentWeather data={weatherData} />
         </div>
-        <CurrentWeather data={weatherData} />
+        <Forecast />
       </div>
     );
   } else {

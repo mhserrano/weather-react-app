@@ -19,7 +19,6 @@
   font-weight: bold;
 }
 .weather-description canvas {
-  max-width: 60px;
   display: inline;
   margin-right: 5px;
 }

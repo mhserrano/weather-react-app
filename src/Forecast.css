@@ -4,14 +4,14 @@
   font-weight: bold;
 }
 
-.forecast .col-sm-3 {
+.forecast .col {
   margin: 5px auto;
   padding: 0;
-  max-width: 160px;
+  min-width: 100px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.forecast p {
+.forecast div {
   margin: 10px;
 }
 .forecast canvas {
