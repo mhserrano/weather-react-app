@@ -13,14 +13,14 @@ export default function Temperature(props) {
   }
   if (props.unit === "celsius") {
     return (
-      <span>
+      <span className="d-block">
         <span className="temperature">{props.celsius}°</span>
         <button onClick={showFahrenheit}>C</button>
       </span>
     );
   } else {
     return (
-      <span>
+      <span className="d-block">
         <span className="temperature">{fahrenheit}°</span>
 
         <button onClick={showCelsius}>F</button>
