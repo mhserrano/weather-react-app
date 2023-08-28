@@ -7,7 +7,11 @@ export default function CurrentWeather(props) {
     <div className="row mt-4">
       <div className="col m-auto p-0">
         <WeatherIcons iconCode={props.data.icon} size={66} />
-        <Temperature celsius={props.data.temperature} />
+        <Temperature
+          celsius={props.data.temperature}
+          unit={props.unit}
+          setUnit={props.setUnit}
+        />
       </div>
       <div className="col p-0">
         <ul>

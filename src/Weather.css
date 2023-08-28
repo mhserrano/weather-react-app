@@ -20,14 +20,25 @@
 }
 .weather-description canvas {
   display: inline;
-  margin-right: 10px;
+  margin-right: 5px;
 }
-.weather-description span {
+.weather-description .temperature {
   position: relative;
-  top: 5px;
+  top: -15px;
   font-size: 38px;
   margin-right: 5px;
-  vertical-align: top;
+}
+
+.weather-description button {
+  position: relative;
+  top: -20px;
+  background-color: rgb(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-size: 14px;
+  margin: 1px;
+  border: 2px solid rgb(0, 0, 0, 0.4);
+  border-radius: 5px;
+  box-shadow: rgb(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .weather-description ul {
