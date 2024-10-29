@@ -14,14 +14,14 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      coordinates: response.data.coord,
-      date: new Date(response.data.dt * 1000),
-      temperature: Math.round(response.data.main.temp),
-      description: response.data.weather[0].description,
-      icon: response.data.weather[0].icon,
+      coordinates: response.data.coordinates,
+      date: new Date(response.data.time),
+      temperature: Math.round(response.data.temperature.current),
+      description: response.data.condition.description,
+      icon: response.data.condition.icon_url,
       wind: response.data.wind.speed,
-      humidity: response.data.main.humidity,
-      city: response.data.name,
+      humidity: response.data.temperature.humidity,
+      city: response.data.city,
     });
   }
   function handleCityChange(event) {
