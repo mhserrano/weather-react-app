@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
-import "./Weather.css";
+import "./styles/Weather.css";
 import FormattedDate from "./FormattedDate";
 import CurrentWeather from "./CurrentWeather";
 import Forecast from "./Forecast";

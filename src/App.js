@@ -1,5 +1,5 @@
-import "./App.css";
-import "./background.jpg";
+import "./styles/App.css";
+import "./styles/background.jpg";
 import Weather from "./Weather";
 
 export default function App() {
