@@ -1,13 +1,11 @@
 import React from "react";
-import WeatherIcons from "./WeatherIcons";
 import Temperature from "./Temperature";
 
 export default function CurrentWeather(props) {
   return (
     <div className="row mt-4">
       <div className="col-7 m-auto p-0">
-        <WeatherIcons iconCode={props.data.icon} size={66} />
-
+        <img src={props.data.icon} />
         <Temperature
           celsius={props.data.temperature}
           unit={props.unit}

@@ -1,7 +1,7 @@
 import React from "react";
-import WeatherIcons from "./WeatherIcons";
 
 export default function ForecastDay(props) {
+  console.log(props);
   function maxTemperature() {
     let temperature = Math.round(props.forecastData.temperature.maximum);
     let fahrenheit = Math.round((temperature * 9) / 5 + 32);
@@ -31,7 +31,7 @@ export default function ForecastDay(props) {
   return (
     <div>
       <div>{day()}</div>
-      <WeatherIcons iconCode={props.forecastData.weather[0].icon} size={38} />
+      <img src={props.forecastData.condition.icon_url} />
       <div className="temperatures m-0">
         <span>{maxTemperature()}</span> | {""}
         <span>{minTemperature()}</span>
