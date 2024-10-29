@@ -38,8 +38,8 @@ export default function Forecast(props) {
       </div>
     );
   } else {
-    let latitude = props.coordinates.lat;
-    let longitude = props.coordinates.lon;
+    let latitude = props.coordinates.latitude;
+    let longitude = props.coordinates.longitude;
     let apiKey = "26fa1d65306c6427fb2f815to8d8b867";
     let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
 
